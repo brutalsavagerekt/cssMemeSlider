@@ -15,57 +15,68 @@ body {
 }
 
 .slider {
-  height: 34rem;
-  width: 60rem;
-  background: rgb(131, 58, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 36rem;
+  width: 45rem;
   background: linear-gradient(
     90deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(252, 176, 69, 1) 100%
   );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+
   row-gap: 1rem;
 }
 
 .slides {
   display: flex;
-  justify-content: center;
   align-items: center;
+  /* justify-content: center; */
+  order: 1;
+  /* height: auto; */
+  background-color: #000;
+  width: 40rem;
+  overflow: hidden;
 }
 
 .text {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  order: 1;
+  justify-content: flex-start;
+  width: 20rem;
+  overflow: hidden;
 }
 
 .controls {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  order: 2;
+  justify-content: flex-end;
+  width: 20rem;
 }
 
 .slides-wrapper {
-    display: flex;
+  display: flex;
 }
 
-
 #slide1 {
+  z-index: 1;
   background-image: url("img/mem1.jpg");
 }
 
 #slide2 {
+  z-index: 2;
   background-image: url("img/mem2.jpg");
 }
 
 #slide3 {
+  z-index: 3;
   background-image: url("img/mem3.jpg");
 }
 
 #slide4 {
+  z-index: 4;
   background-image: url("img/mem4.jpg");
 }
 
@@ -77,6 +88,56 @@ body {
   background-position: center center;
 } */
 
-.slides {
+.slide {
+  width: 40rem;
+  height: 23rem;
+  background: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
+.controls-wrapper {
+  display: flex;
+}
+
+.text-wrapper {
+  display: flex;
+}
+
+.caption {
+  width: 31rem;
+  color: #fff;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+
+.pin {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.625rem;
+  border-radius: 50%;
+  background-clip: content-box;
+  background-color: #853bb2;
+  outline: 0.125rem solid #853bb2;
+  outline-offset: -0.75rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+input:checked + .pin {
+  background-color: transparent;
+}
+
+.controls:has(#mem1:checked) ~ .slides .slides-wrapper {
+  transform: translateX(0);
+}
+
+.pin:hover {
+    background-color: rgb(190, 196, 7);
+    outline: 0.125rem solid rgb(190, 196, 7);
 }
