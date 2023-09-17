@@ -159,3 +159,19 @@ input:checked + .pin {
 .controls:has(#mem4:checked) ~ .slides .slides-wrapper {
     transform: translateX(-120rem);
 }
+
+.controls:has(#mem1:checked) ~ .text .text-wrapper {
+    transform: translateX(0);
+}
+
+.controls:has(#mem2:checked) ~ .text .text-wrapper {
+    transform: translateX(-31rem);
+}
+
+.controls:has(#mem3:checked) ~ .text .text-wrapper {
+    transform: translateX(-62rem);
+}
+
+.controls:has(#mem4:checked) ~ .text .text-wrapper {
+    transform: translateX(-93rem);
+}
