@@ -104,6 +104,7 @@ body {
 
 .text-wrapper {
   display: flex;
+  transition: transform 0.3s linear;
 }
 
 .caption {
