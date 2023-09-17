@@ -7,4 +7,76 @@ body {
   margin: 0;
 }
 
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.slider {
+  height: 34rem;
+  width: 60rem;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides-wrapper {
+    display: flex;
+}
+
+
+#slide1 {
+  background-image: url("img/mem1.jpg");
+}
+
+#slide2 {
+  background-image: url("img/mem2.jpg");
+}
+
+#slide3 {
+  background-image: url("img/mem3.jpg");
+}
+
+#slide4 {
+  background-image: url("img/mem4.jpg");
+}
+
+/* .slide {
+  width: 40rem;
+  height: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+} */
+
+.slides {
+
+}
