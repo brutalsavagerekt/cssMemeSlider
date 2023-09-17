@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme slider</title>
     <!-- <link rel="stylesheet" href="normalize.css"> -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="slider">
-        <div class="slides">
-            <div class="slide"><img src="img/mem1.jpg" alt="mem1"></div>
-            <div class="slide"><img src="img/mem2.jpg" alt="mem2"></div>
-            <div class="slide"><img src="img/mem3.jpg" alt="mem3"></div>
-            <div class="slide"><img src="img/mem4.jpg" alt="mem4"></div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="slider">
+            <div class="slides">
+                <div class="slides-rapper">
+                    <div class="slide"><img src="img/mem1.jpg" alt="mem1"></div>
+                    <div class="slide"><img src="img/mem2.jpg" alt="mem2"></div>
+                    <div class="slide"><img src="img/mem3.jpg" alt="mem3"></div>
+                    <div class="slide"><img src="img/mem4.jpg" alt="mem4"></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-wrapper">
+                    <div class="caption">one</div>
+                    <div class="caption">two</div>
+                    <div class="caption">three</div>
+                    <div class="caption">four</div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="controls-wrapper">
+                    <input type="radio" name="control" id="mem1" checked>
+                    <label for="mem1" class="pin"></label>
+                    <input type="radio" name="control" id="mem2">
+                    <label for="mem2" class="pin"></label>
+                    <input type="radio" name="control" id="mem3">
+                    <label for="mem3" class="pin"></label>
+                    <input type="radio" name="control" id="mem4">
+                    <label for="mem4" class="pin"></label>
+                </div>
+            </div>
         </div>
-        <input type="radio" name="slide" id="mem1">
-        <input type="radio" name="slide" id="mem2">
-        <input type="radio" name="slide" id="mem3">
-        <input type="radio" name="slide" id="mem4">
-
-        <label for="mem1" class="controlButton" checked>One</label>
-        <label for="mem2" class="controlButton">Two</label>
-        <label for="mem3" class="controlButton">Three</label>
-        <label for="mem4" class="controlButton">Four</label>
     </div>
-</body>
+  </body>
 </html>
