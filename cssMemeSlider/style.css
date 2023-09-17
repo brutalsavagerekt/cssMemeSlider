@@ -58,6 +58,7 @@ body {
 
 .slides-wrapper {
   display: flex;
+  transition: transform 0.3s linear;
 }
 
 #slide1 {
@@ -110,6 +111,7 @@ body {
   color: #fff;
 }
 
+
 input {
   display: none;
   visibility: hidden;
@@ -140,4 +142,20 @@ input:checked + .pin {
 .pin:hover {
     background-color: rgb(190, 196, 7);
     outline: 0.125rem solid rgb(190, 196, 7);
+}
+
+.controls:has(#mem1:checked) ~ .slides .slides-wrapper {
+    transform: translateX(0);
+}
+
+.controls:has(#mem2:checked) ~ .slides .slides-wrapper {
+    transform: translateX(-40rem);
+}
+
+.controls:has(#mem3:checked) ~ .slides .slides-wrapper {
+    transform: translateX(-80rem);
+}
+
+.controls:has(#mem4:checked) ~ .slides .slides-wrapper {
+    transform: translateX(-120rem);
 }
