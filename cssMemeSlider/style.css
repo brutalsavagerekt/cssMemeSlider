@@ -175,3 +175,32 @@ input:checked + .pin {
 .controls:has(#mem4:checked) ~ .text .text-wrapper {
     transform: translateX(-93rem);
 }
+/* tablet */
+@media (max-width: 1023px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .controls {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text {
+        margin-left: 3rem;
+        order: 4;
+        align-self: flex-start;
+    }
+
+}
+/* mobile */
+@media (max-width: 540px) {
+    html {
+        font-size: 8px;
+    }
+}
